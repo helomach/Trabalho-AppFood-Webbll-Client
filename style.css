@@ -1,0 +1,131 @@
+/* Estilos globais */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para o corpo da página */
+body {
+  background-image: url('https://s1.1zoom.me/big0/933/416599-svetik.jpg');
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Estilos para o wrapper */
+.wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilos para o título */
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #5f0909;
+}
+
+/* Estilos para as wraps */
+.wraps ul li {
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #555;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #f7f7f7;
+  transition: background-color 0.3s ease;
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+
+.wraps ul li.active {
+  color: #fff;
+  background-color: #555;
+}
+
+/* Estilos para o item-wrap */
+.item-wrap {
+  display: none;
+  margin-bottom: 20px;
+}
+
+.item-wrap.active {
+  display: block;
+}
+
+/* Estilos para o item */
+.item {
+  margin-bottom: 20px;
+}
+
+.item label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Estilos para os inputs de texto, file e select */
+.item input[type="text"],
+.item input[type="file"],
+.item select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #5f0909;
+  border-radius: 4px;
+}
+
+/* Configurações do container */
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.container-block {
+  width: 400px;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #f7f7f7;
+}
+
+/* Estilo dos botões */
+button {
+  padding: 10px 20px;
+  background-color: #555;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+/* Estilos para alternar as janelas de categoria e produto */
+.item-wrap.category.active ~ .item-wrap.product {
+  display: none;
+}
+
+.item-wrap.product.active ~ .item-wrap.category {
+  display: none;
+}
+
+/* Estilos para o input file */
+.item-wrap.product .file-image {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
